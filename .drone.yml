@@ -4,9 +4,9 @@ env:
   - USE_SYSTEM_GECODE=1
 script:
   - bundle install
-  - berks install
-  - rake
-  - berks package /tmp/dockercon-master.tgz
+  - bundle exec berks install
+  - bundle exec rake
+  - bundle exec berks package /tmp/dockercon-master.tgz
 notify:
   email:
     recipients:
