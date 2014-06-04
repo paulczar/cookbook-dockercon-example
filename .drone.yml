@@ -7,10 +7,6 @@ script:
   - bundle exec berks install
   - bundle exec rake spec style
   - bundle exec berks package /tmp/dockercon-master.tgz
-notify:
-  email:
-    recipients:
-      - paul.czarkowski@rackspace.com
 publish:
   swift:
     username: paulczar
