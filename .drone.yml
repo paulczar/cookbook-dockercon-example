@@ -18,6 +18,6 @@ publish:
     auth_url: https://identity.api.rackspacecloud.com/v2.0
     region: DFW
     container: drone
-    source: /tmp/cookbook-master.tgz
+    source: /tmp/dockercon-master.tgz
     target: cookbooks/dockercon-master.tgz
     branch: master
