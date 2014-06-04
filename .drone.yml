@@ -4,5 +4,20 @@ env:
   - USE_SYSTEM_GECODE=1
 script:
   - bundle install
-  - bundle exec berks install
-  - bundle exec rake style spec
+  - berks install
+  - rake
+  - berks package /tmp/dockercon-master.tgz
+notify:
+  email:
+    recipients:
+      - paul.czarkowski@rackspace.com
+publish:
+  swift:
+    username: paulczar
+    password: {{rs_api_key}}
+    auth_url: https://identity.api.rackspacecloud.com/v2.0
+    region: DFW
+    container: drone
+    source: /tmp/cookbook-master.tgz
+    target: cookbooks/dockercon-master.tgz
+    branch: master
