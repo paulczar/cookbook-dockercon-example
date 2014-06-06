@@ -5,7 +5,7 @@ env:
 script:
   - bundle install
   - bundle exec berks install
-  - bundle exec rake spec style
+  - bundle exec rake style spec
   - bundle exec berks package /tmp/dockercon-master.tgz
 publish:
   swift:
@@ -17,3 +17,4 @@ publish:
     source: /tmp/dockercon-master.tgz
     target: cookbooks/dockercon-master.tgz
     branch: master
+
