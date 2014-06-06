@@ -1,4 +1,4 @@
-# builds docker container to be used with CI
+# builds docker container to be used with CI <3
 
 FROM paulczar/meez
 
