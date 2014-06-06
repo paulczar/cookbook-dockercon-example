@@ -1,6 +1,7 @@
 dockercon Cookbook
 ==================
-TODO: Enter the cookbook description here.
+
+This is an example cookbook for DockerCon
 
 Build Status
 ----------------
@@ -10,54 +11,15 @@ Build Status
 Download the latest build [here](http://8fd0618c7271363c6241-8d30535c9831cb6b3e09a0dcc9c20061.r13.cf1.rackcdn.com/cookbooks/dockercon-master.tgz)
 
 
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook installls a docker registry and uploads commonly used docker images.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-e.g.
-#### packages
-- `toaster` - dockercon needs toaster to brown your bagel.
+Ubuntu 12.04 +
 
 Attributes
 ----------
-TODO: List your cookbook attributes here.
-
-e.g.
-#### dockercon::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['dockercon']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
-Usage
------
-#### dockercon::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
-Just include `dockercon` in your node's `run_list`:
-
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[dockercon]"
-  ]
-}
-```
 
 Contributing
 ------------
