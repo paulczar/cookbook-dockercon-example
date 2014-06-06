@@ -17,4 +17,3 @@ publish:
     source: /tmp/dockercon-master.tgz
     target: cookbooks/dockercon-master.tgz
     branch: master
-
